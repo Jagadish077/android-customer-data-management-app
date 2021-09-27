@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AnmolPipes</string>
+    <string name="Username_hint">Username</string>
+    <string name="Password_hint">Password</string>
+    <string name="Login_btn">Login</string>
+    <string name="login_error">Invalid Username OR Password..!</string>
+    <string name="Rs">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fab_content_desc">Add Items</string>
+    <string name="fab_text">Add Row</string>
+    <!--    Add product Strings -->
+
+</resources>
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedViewActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:padding="10dp"
+        android:elevation="30sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_border_table">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@color/skyblue_two">
+
+            <TextView
+                android:id="@+id/det_customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:padding="5dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/det_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@color/skyblue_two">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Running Balance"
+                android:padding="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/det_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100000"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/childTable">
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/skyblue_two">
+                <EditText
+                    android:gravity="center"
+                    android:hint="Add"
+                    android:id="@+id/add_money"
+                    android:lines="1"
+                    android:textColor="@color/green"
+                    android:layout_weight="2"
+                    android:padding="5sp"
+                    />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="5sp"
+                    android:gravity="center"
+                    android:text="Add Amount"
+                    android:id="@+id/add_amount"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/skyblue_two"
+                >
+                <EditText
+                    android:gravity="center"
+                    android:hint="Minus"
+                    android:id="@+id/minus_money"
+                    android:lines="1"
+                    android:textColor="@color/green"
+                    android:layout_weight="2"
+                    android:padding="5sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:text="Minus Amount"
+                    android:id="@+id/minus_amount"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/main">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/main_recycler_view"
+                    android:padding="10dp"/>
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

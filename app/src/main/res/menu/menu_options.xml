@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search_action"
+        android:title="Search"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item android:id="@+id/more"
+        android:icon="@drawable/ic_more_menu"
+        app:showAsAction="always"
+        android:title="more">
+        <menu>
+            <item android:title="Add Customer"
+                android:icon="@drawable/ic_baseline_person_add_alt_1_24"
+                android:id="@+id/Add_Customer"/>
+            <item android:title="Generate PDF"
+                android:id="@+id/gen_pdf"/>
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_exit"
+                android:visible="true"
+                app:showAsAction="withText" />
+        </menu>
+    </item>
+</menu>

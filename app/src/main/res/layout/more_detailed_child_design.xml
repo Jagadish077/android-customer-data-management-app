@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/child_table_row"
+    android:orientation="horizontal"
+    android:background="@color/light_gray">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:padding="3sp"
+                android:text="Row1"
+                android:id="@+id/c_row_productName"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:padding="3sp"
+                android:text="Row1"
+                android:id="@+id/c_row_productSize"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:padding="3sp"
+                android:text="Row1"
+                android:id="@+id/c_qty"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:padding="3sp"
+                android:text="Row1"
+                android:id="@+id/c_rate"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:padding="3sp"
+                android:text="Row1"
+                android:id="@+id/c_totalAmount"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
